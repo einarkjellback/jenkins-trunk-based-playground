@@ -6,3 +6,5 @@
 - Feature #2 added.
 
 - Hotfix #1 added.
+
+- Feature #3 added.

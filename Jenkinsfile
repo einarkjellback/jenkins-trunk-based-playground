@@ -9,7 +9,7 @@ pipeline {
                     scm: [
                         $class: 'GitSCM', 
                         // branches: [[name: ":release-\\d+\\.\\d+\\.\\d+"]], 
-                        branches: [[name: ":release"]],
+                        branches: [[name: "main"]],
                         extensions: [], 
                         userRemoteConfigs: [[url: 'git@github.com:einarkjellback/jenkins-trunk-based-playground.git']]
                     ]

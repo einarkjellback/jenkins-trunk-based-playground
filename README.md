@@ -8,3 +8,5 @@
 - Hotfix #1 added.
 
 - Feature #3 added.
+
+- Added incomplete feature #4.

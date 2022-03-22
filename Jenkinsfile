@@ -3,17 +3,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                checkout (
-                    poll: true,
-                    changelog: false, 
-                    scm: [
-                        $class: 'GitSCM', 
-                        // branches: [[name: ":release-\\d+\\.\\d+\\.\\d+"]], 
-                        branches: [[name: ":release"]],
-                        extensions: [], 
-                        userRemoteConfigs: [[url: 'git@github.com:einarkjellback/jenkins-trunk-based-playground.git']]
-                    ]
-                )
                 sh 'mvn --version'
             }
         }
